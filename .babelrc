@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "react",
+    "stage-2",
+    "react-hmre"
+  ],
+  "plugins": ["transform-runtime"],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
